@@ -20,7 +20,7 @@ function consultaEndereco(){
 function getEndereco(dados){
     let resultado = document.querySelector('#resultado')
     if (dados.erro) {
-        alert('Não foi possivel encontrar esse endereço')
+        alert('Não foi possivel econtrar esse endereço')
     }
     else{
     resultado.innerHTML = ` <p>Endereço: ${dados.logradouro}</p>
