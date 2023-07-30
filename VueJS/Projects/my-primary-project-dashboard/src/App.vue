@@ -1,27 +1,13 @@
 <template>
-  <div>
-    <!-- Importe e utilize o componente Navbar aqui -->
-    <Navbar />
-    <div class="content">
-      <!-- Conteúdo do site vai aqui -->
-      <p>Bem-vindo ao meu site!</p>
-    </div>
-    <Section />
-  </div>
+  
+  <Dashboard />
 </template>
 
-<script>
+<script lang="ts" setup>
 // Importe o componente Navbar aqui
-import Navbar from './components/navbar.vue';
-import Section from './components/section.vue';
-export default {
-  name: 'App',
-  components: {
-    Navbar,
-    Section
-  },
-  
-};
+
+import Dashboard from './layout/Dashboard.vue';
+
 </script>
 
 <style>
